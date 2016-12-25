@@ -1,8 +1,9 @@
 package cc.smartcasual;
 
+import java.io.Serializable;
 import java.util.HashSet;
 
-public class HashSetFilter<T> implements SetFilter<T> {
+public class HashSetFilter<T> implements SetFilter<T>, Serializable {
 
     HashSet<T> hashSet = new HashSet<>();
 

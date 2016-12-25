@@ -1,6 +1,8 @@
 package cc.smartcasual;
 
-public class BloomFilter<T> implements SetFilter<T> {
+import java.io.Serializable;
+
+public class BloomFilter<T> implements SetFilter<T>, Serializable {
 
     private BitField bitField;
 
