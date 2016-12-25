@@ -1,5 +1,6 @@
 package cc.smartcasual;
 
+import cc.smartcasual.filter.SetFilter;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -13,9 +14,7 @@ public class BloomFilterTest
 
     @BeforeClass
     public static void loadDictionary() throws Exception {
-        DictionaryLoader dictionary = DictionaryLoader.loadEnglish();
-        filter = BloomFilterBuilder.forElementCount(dictionary.count()).build();
-        dictionary.forEachWord(word -> filter.add(word));
+        filter = DictionaryLoader.loadEnglish().makeFilter();
     }
 
     @Test

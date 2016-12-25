@@ -1,4 +1,4 @@
-package cc.smartcasual;
+package cc.smartcasual.filter;
 
 import static java.lang.Math.*;
 
@@ -20,12 +20,11 @@ public class BloomFilterBuilder<T>
         return this;
     }
 
-    public SetFilter<T> build()
+    public BloomFilter<T> build()
     {
-        return new BloomFilter<T>() {{
-            int bitCount = (int) ceil(-elementCount * log(falsePositiveRate) / pow(log(2), 2));
-            bitField = new BitField(bitCount);
-            hashFunctionCount = (int) ceil(-(log(falsePositiveRate)) / log(2));
-        }};
+        int bitCount = (int) ceil(-elementCount * log(falsePositiveRate) / pow(log(2), 2));
+        int hashFunctionCount = (int) ceil(-(log(falsePositiveRate)) / log(2));
+
+        return new BloomFilter<T>(bitCount, hashFunctionCount);
     }
 }

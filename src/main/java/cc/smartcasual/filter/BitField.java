@@ -1,7 +1,9 @@
-package cc.smartcasual;
+package cc.smartcasual.filter;
 
-public class BitField {
+import java.io.Serializable;
 
+public class BitField implements Serializable
+{
     private long[] bits;
 
     private static final int BITS_PER_LONG = 64;
@@ -22,6 +24,11 @@ public class BitField {
     {
         int entryIndex = entryIndexForBitIndex(index);
         bits[entryIndex] |= maskForIndex(index);
+    }
+
+    public int size()
+    {
+        return bits.length;
     }
 
     private int entryIndexForBitIndex(int bitIndex)

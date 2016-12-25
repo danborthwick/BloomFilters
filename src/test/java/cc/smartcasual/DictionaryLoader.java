@@ -1,5 +1,8 @@
 package cc.smartcasual;
 
+import cc.smartcasual.filter.BloomFilter;
+import cc.smartcasual.filter.BloomFilterBuilder;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -38,5 +41,12 @@ public class DictionaryLoader {
     public int count() throws IOException {
         return (int) readLines().count();
     }
+
+    public BloomFilter<String> makeFilter() throws IOException {
+        BloomFilter filter = BloomFilterBuilder.forElementCount(count()).build();
+        forEachWord(word -> filter.add(word));
+        return filter;
+    }
+
 
 }

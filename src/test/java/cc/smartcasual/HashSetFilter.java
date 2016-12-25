@@ -1,5 +1,7 @@
 package cc.smartcasual;
 
+import cc.smartcasual.filter.SetFilter;
+
 import java.io.Serializable;
 import java.util.HashSet;
 

@@ -1,5 +1,6 @@
 package cc.smartcasual;
 
+import cc.smartcasual.filter.BitField;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

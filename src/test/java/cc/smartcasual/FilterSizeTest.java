@@ -1,5 +1,7 @@
 package cc.smartcasual;
 
+import cc.smartcasual.filter.BloomFilter;
+import cc.smartcasual.filter.SetFilter;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -13,11 +15,12 @@ public class FilterSizeTest {
 
     @Test
     public void hashSetSizeExceedsBloomFilterSize() throws Exception {
-        SetFilter<String> naiiveFilter = new HashSetFilter<>();
-        DictionaryLoader.loadEnglish().forEachWord(word -> naiiveFilter.add(word));
+        DictionaryLoader dictionary = DictionaryLoader.loadEnglish();
 
-        SetFilter<String> bloomFilter = new BloomFilter<>();
-        DictionaryLoader.loadEnglish().forEachWord(word -> bloomFilter.add(word));
+        SetFilter<String> naiiveFilter = new HashSetFilter<>();
+        dictionary.forEachWord(word -> naiiveFilter.add(word));
+
+        BloomFilter<String> bloomFilter = dictionary.makeFilter();
 
         assertThat(sizeOf(bloomFilter), lessThan(sizeOf(naiiveFilter)));
     }
