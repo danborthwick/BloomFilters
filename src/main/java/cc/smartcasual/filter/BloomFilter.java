@@ -32,6 +32,10 @@ public class BloomFilter<T> implements SetFilter<T>, Serializable {
         return true;
     }
 
+    public int numberOfBitsSet() {
+        return bitField.count();
+    }
+
     class HashCollection implements Iterable<Integer>
     {
         private int hash;
@@ -49,7 +53,7 @@ public class BloomFilter<T> implements SetFilter<T>, Serializable {
             return new Iterator<Integer>() {
                 @Override
                 public boolean hasNext() {
-                    return hashCount >= hashFunctionCount;
+                    return hashCount < hashFunctionCount;
                 }
 
                 @Override

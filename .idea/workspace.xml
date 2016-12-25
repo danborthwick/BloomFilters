@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d07250c8-60a2-4f7c-b96a-0b537e28d9ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/BloomFilter.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/BitField.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/BloomFilterBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilterBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/SetFilter.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/FilterSizeTest.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/FilterSizeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/HashSetFilter.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/HashSetFilter.java" />
     </list>
     <ignored path="BloomFilters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +33,17 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.7777777">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,40 +53,42 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BloomFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BloomFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25155926">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#1347#1348#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitField.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BitField.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.87318087">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,7 +146,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,12 +187,14 @@
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/BloomFilterBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/BitField.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/BloomFilter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" />
         <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/FilterSizeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilterBuilder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" />
       </list>
     </option>
   </component>
@@ -482,6 +491,58 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="false" name="BitFieldTest.testNumberOfBitsSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cc.smartcasual.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BloomFilters" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cc.smartcasual" />
+      <option name="MAIN_CLASS_NAME" value="cc.smartcasual.BitFieldTest" />
+      <option name="METHOD_NAME" value="testNumberOfBitsSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BitFieldTest.testNumberOfBitsSetSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cc.smartcasual.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BloomFilters" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cc.smartcasual" />
+      <option name="MAIN_CLASS_NAME" value="cc.smartcasual.BitFieldTest" />
+      <option name="METHOD_NAME" value="testNumberOfBitsSetSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -704,16 +765,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BitFieldTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.All in BloomFilters" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BitFieldTest.testNumberOfBitsSet" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BitFieldTest.testNumberOfBitsSetSmall" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in BloomFilters" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.BitFieldTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BitFieldTest.testNumberOfBitsSetSmall" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BitFieldTest.testNumberOfBitsSet" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -731,35 +796,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 22m 33s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.26 at 01h 00m 01s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 22m 57s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.26 at 01h 00m 45s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 23m 25s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.26 at 01h 02m 11s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 24m 13s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.26 at 01h 09m 03s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 26m 26s.xml">
-      <configuration name="All in BloomFilters" configurationId="JUnit" />
+    <history-entry file="BitFieldTest - 2016.12.26 at 01h 08m 55s.xml">
+      <configuration name="BitFieldTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 26m 54s.xml">
-      <configuration name="All in BloomFilters" configurationId="JUnit" />
+    <history-entry file="BitFieldTest_testNumberOfBitsSet - 2016.12.26 at 01h 02m 54s.xml">
+      <configuration name="BitFieldTest.testNumberOfBitsSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 40m 18s.xml">
-      <configuration name="All in BloomFilters" configurationId="JUnit" />
+    <history-entry file="BitFieldTest_testNumberOfBitsSet - 2016.12.26 at 01h 04m 26s.xml">
+      <configuration name="BitFieldTest.testNumberOfBitsSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 44m 47s.xml">
-      <configuration name="All in BloomFilters" configurationId="JUnit" />
+    <history-entry file="BitFieldTest_testNumberOfBitsSetSmall - 2016.12.26 at 01h 08m 30s.xml">
+      <configuration name="BitFieldTest.testNumberOfBitsSetSmall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 44m 51s.xml">
-      <configuration name="All in BloomFilters" configurationId="JUnit" />
+    <history-entry file="BitFieldTest_testNumberOfBitsSetSmall - 2016.12.26 at 01h 08m 34s.xml">
+      <configuration name="BitFieldTest.testNumberOfBitsSetSmall" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.26 at 00h 44m 58s.xml">
-      <configuration name="All in BloomFilters" configurationId="JUnit" />
+    <history-entry file="BitFieldTest_testNumberOfBitsSetSmall - 2016.12.26 at 01h 08m 39s.xml">
+      <configuration name="BitFieldTest.testNumberOfBitsSetSmall" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +860,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -810,8 +875,10 @@
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -828,22 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15654206">
           <caret line="55176" column="19" selection-start-line="55176" selection-start-column="0" selection-end-line="55176" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -870,47 +921,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/FilterSizeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -923,14 +939,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25155926">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7777777">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87318087">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
           </folding>
         </state>
       </provider>

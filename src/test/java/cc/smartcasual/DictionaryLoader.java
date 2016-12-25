@@ -47,6 +47,4 @@ public class DictionaryLoader {
         forEachWord(word -> filter.add(word));
         return filter;
     }
-
-
 }

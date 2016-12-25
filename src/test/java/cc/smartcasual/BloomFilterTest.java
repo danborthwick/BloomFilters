@@ -1,16 +1,17 @@
 package cc.smartcasual;
 
-import cc.smartcasual.filter.SetFilter;
+import cc.smartcasual.filter.BloomFilter;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.notNullValue;
 import static org.junit.Assert.assertThat;
 
 public class BloomFilterTest
 {
-    static SetFilter filter;
+    static BloomFilter filter;
 
     @BeforeClass
     public static void loadDictionary() throws Exception {
@@ -23,7 +24,12 @@ public class BloomFilterTest
     }
 
     @Test
-    public void fakeWordIsFiltered() throws Exception {
+    public void filterHasManyBitsSet() throws Exception {
+        assertThat(filter.numberOfBitsSet(), greaterThan(1000));
+    }
+
+    @Test
+    public void unknownWordIsFiltered() throws Exception {
         assertThat(filter.mayContain("thisisnotaword"), is(false));
     }
 
