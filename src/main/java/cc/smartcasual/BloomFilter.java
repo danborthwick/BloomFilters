@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 public class BloomFilter<T> implements SetFilter<T>, Serializable {
 
-    private BitField bitField;
+    protected BitField bitField;      // length = m
+    protected int hashFunctionCount;  // k
 
     @Override
     public void add(T value)

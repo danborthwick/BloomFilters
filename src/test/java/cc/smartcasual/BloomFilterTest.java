@@ -9,12 +9,13 @@ import static org.junit.Assert.assertThat;
 
 public class BloomFilterTest
 {
-    static BloomFilter<String> filter;
+    static SetFilter filter;
 
     @BeforeClass
     public static void loadDictionary() throws Exception {
-        filter = new BloomFilter<>();
-        DictionaryLoader.loadEnglish().forEachWord(word -> filter.add(word));
+        DictionaryLoader dictionary = DictionaryLoader.loadEnglish();
+        filter = BloomFilterBuilder.forElementCount(dictionary.count()).build();
+        dictionary.forEachWord(word -> filter.add(word));
     }
 
     @Test

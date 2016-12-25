@@ -10,16 +10,10 @@ import java.util.stream.Stream;
 
 public class DictionaryLoader {
 
-    private final Stream<String> lines;
+    private final Path path;
 
     public DictionaryLoader(String resourceName) throws URISyntaxException, IOException {
-        Path path = Paths.get(ClassLoader.getSystemResource(resourceName).toURI());
-        lines = Files.lines(path);
-    }
-
-    public void forEachWord(Consumer<? super String> action)
-    {
-        lines.forEach(action);
+        path = Paths.get(ClassLoader.getSystemResource(resourceName).toURI());
     }
 
     public static DictionaryLoader loadEnglish()
@@ -31,4 +25,18 @@ public class DictionaryLoader {
             return null;
         }
     }
+
+    public void forEachWord(Consumer<? super String> action) throws IOException {
+        Stream<String> lines = readLines();
+        lines.forEach(action);
+    }
+
+    private Stream<String> readLines() throws IOException {
+        return Files.lines(path);
+    }
+
+    public int count() throws IOException {
+        return (int) readLines().count();
+    }
+
 }
