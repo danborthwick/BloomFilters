@@ -1,11 +1,17 @@
 package cc.smartcasual;
 
-public class BloomFilter {
+public class BloomFilter<T> implements SetFilter<T> {
 
     private BitField bitField;
 
-    public void add(String word)
+    @Override
+    public void add(T value)
     {
+    }
 
+    @Override
+    public boolean mayContain(T value)
+    {
+        return false;
     }
 }

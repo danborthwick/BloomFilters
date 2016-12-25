@@ -21,4 +21,14 @@ public class DictionaryLoader {
     {
         lines.forEach(action);
     }
+
+    public static DictionaryLoader loadEnglish()
+    {
+        try {
+            return new DictionaryLoader("words.txt");
+        }
+        catch (Exception e) {
+            return null;
+        }
+    }
 }
