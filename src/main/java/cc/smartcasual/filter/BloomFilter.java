@@ -35,4 +35,11 @@ public class BloomFilter<T> implements SetFilter<T>, Serializable {
         return bitField.count();
     }
 
+    @Override
+    public int estimatedCount() {
+        double mOverK = (double) bitField.size() / (double) hashFunctionCount;
+        double xOverM = (double) bitField.count() / (double) bitField.size();
+        return (int) (-mOverK * Math.log(1. - xOverM));
+    }
+
 }

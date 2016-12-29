@@ -18,4 +18,9 @@ public class HashSetFilter<T> implements SetFilter<T>, Serializable {
     public boolean mayContain(T value) {
         return hashSet.contains(value);
     }
+
+    @Override
+    public int estimatedCount() {
+        return hashSet.size();
+    }
 }

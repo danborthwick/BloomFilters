@@ -10,6 +10,7 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Collection;
 
+import static org.hamcrest.Matchers.closeTo;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.notNullValue;
@@ -21,8 +22,8 @@ public class BloomFilterTest
     @Parameters(name = "{0} filter")
     public static Collection<Object[]> data() throws Exception {
         return Arrays.asList(new Object[][]{
-                {"Simple", simpleFilter(), "a", "f"},
-                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "thisnotaword"}
+                {"Simple", simpleFilter(), "a", "f", 5},
+                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "thisnotaword", DictionaryLoader.loadEnglish().count()}
         });
     }
 
@@ -34,6 +35,8 @@ public class BloomFilterTest
     public String wordInSet;
     @Parameter(value = 3)
     public String wordNotInSet;
+    @Parameter(value = 4)
+    public double entryCount;
 
     static BloomFilter<String> simpleFilter() {
         BloomFilter<String> filter = BloomFilterBuilder.forElementCount(8).build();
@@ -63,5 +66,10 @@ public class BloomFilterTest
     @Test
     public void wordInSetIsNotFiltered() {
         assertThat(filter.mayContain(wordInSet), is(true));
+    }
+
+    @Test
+    public void estimatedEntryCount() {
+        assertThat((double) filter.estimatedCount(), closeTo(entryCount, entryCount * 0.01));
     }
 }

@@ -8,4 +8,6 @@ public interface SetFilter<T> {
     default void add(Iterable<T> values) {
         values.forEach(value -> add(value));
     }
+
+    int estimatedCount();
 }
