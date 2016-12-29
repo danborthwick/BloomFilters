@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d07250c8-60a2-4f7c-b96a-0b537e28d9ed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java" afterPath="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" afterPath="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" />
     </list>
     <ignored path="BloomFilters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +41,12 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1576#1577#0" expanded="true" />
+                <element signature="e#1626#1627#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
               <folding>
                 <element signature="e#798#799#0" expanded="true" />
                 <element signature="e#882#883#0" expanded="true" />
@@ -89,9 +92,21 @@
       <file leaf-file-name="BitField.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3014553">
+            <state vertical-scroll-proportion="0.33264032">
               <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DictionaryLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,16 +146,16 @@
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/BloomFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/FilterSizeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilterBuilder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/BitFieldTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/filter/HashCodeHasherTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/HashCodeHasher.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/RandomHasher.java" />
         <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/filter/RandomHasherTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java" />
       </list>
     </option>
   </component>
@@ -752,34 +767,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 27m 20s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 53m 37s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 37m 00s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 55m 52s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 37m 44s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 57m 03s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 38m 24s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 57m 21s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 38m 37s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 57m 38s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 38m 47s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 59m 20s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 38m 55s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 23h 00m 06s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 39m 04s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 23h 00m 43s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 39m 16s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 23h 06m 12s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_BloomFilters - 2016.12.29 at 22h 39m 56s.xml">
+    <history-entry file="All_in_BloomFilters - 2016.12.29 at 23h 06m 48s.xml">
       <configuration name="All in BloomFilters" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -802,7 +817,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40328252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40328252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -816,7 +831,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -853,7 +868,9 @@
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -892,6 +909,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15654206">
           <caret line="55176" column="19" selection-start-line="55176" selection-start-column="0" selection-end-line="55176" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -906,14 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -936,16 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -996,10 +996,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/DictionaryLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BloomFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           <folding>
             <element signature="e#798#799#0" expanded="true" />
             <element signature="e#882#883#0" expanded="true" />
@@ -1010,17 +1020,29 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/cc/smartcasual/BloomFilterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/SetFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28066528">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/smartcasual/filter/BitField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3014553">
+        <state vertical-scroll-proportion="0.33264032">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding />
         </state>

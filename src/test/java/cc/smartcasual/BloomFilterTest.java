@@ -1,21 +1,49 @@
 package cc.smartcasual;
 
 import cc.smartcasual.filter.BloomFilter;
-import org.junit.BeforeClass;
+import cc.smartcasual.filter.BloomFilterBuilder;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.notNullValue;
 import static org.junit.Assert.assertThat;
 
+@RunWith(Parameterized.class)
 public class BloomFilterTest
 {
-    static BloomFilter filter;
+    @Parameters(name = "{0} filter")
+    public static Collection<Object[]> data() throws Exception {
+        return Arrays.asList(new Object[][]{
+                {"Simple", simpleFilter(), "a", "notaword"},
+                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "notaword"}
+        });
+    }
 
-    @BeforeClass
-    public static void loadDictionary() throws Exception {
-        filter = DictionaryLoader.loadEnglish().makeFilter();
+    @Parameter
+    public String testName;
+    @Parameter(value = 1)
+    public BloomFilter<String> filter;
+    @Parameter(value = 2)
+    public String wordInSet;
+    @Parameter(value = 3)
+    public String wordNotInSet;
+
+    static BloomFilter<String> simpleFilter() {
+        BloomFilter<String> filter = BloomFilterBuilder.forElementCount(8).build();
+        filter.add(Arrays.asList("a", "b", "c", "d", "e" ));
+        return filter;
+    }
+
+    static BloomFilter<String> englishDictionaryFilter() throws Exception {
+        return DictionaryLoader.loadEnglish().makeFilter();
     }
 
     @Test
@@ -24,18 +52,18 @@ public class BloomFilterTest
     }
 
     @Test
-    public void filterHasManyBitsSet() throws Exception {
-        assertThat(filter.numberOfBitsSet(), greaterThan(1000));
+    public void filterHasBitsSet() throws Exception {
+        assertThat(filter.numberOfBitsSet(), greaterThan(5));
     }
 
     @Test
-    public void unknownWordIsFiltered() throws Exception {
+    public void wordNotInSetIsFiltered() throws Exception {
         //TODO: Statistically
-        assertThat(filter.mayContain("notaword"), is(false));
+        assertThat(filter.mayContain(wordNotInSet), is(false));
     }
 
     @Test
-    public void realWordIsNotFiltered() {
-        assertThat(filter.mayContain("dishexecontahedroid"), is(true));
+    public void wordInSetIsNotFiltered() {
+        assertThat(filter.mayContain(wordInSet), is(true));
     }
 }

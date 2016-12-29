@@ -19,14 +19,8 @@ public class DictionaryLoader {
         path = Paths.get(ClassLoader.getSystemResource(resourceName).toURI());
     }
 
-    public static DictionaryLoader loadEnglish()
-    {
-        try {
-            return new DictionaryLoader("words.txt");
-        }
-        catch (Exception e) {
-            return null;
-        }
+    public static DictionaryLoader loadEnglish() throws IOException, URISyntaxException {
+        return new DictionaryLoader("words.txt");
     }
 
     public void forEachWord(Consumer<? super String> action) throws IOException {
