@@ -37,7 +37,7 @@ public class DictionaryLoader {
     }
 
     public BloomFilter<String> makeFilter() throws IOException {
-        BloomFilter filter = BloomFilterBuilder.forElementCount(count()).build();
+        BloomFilter filter = BloomFilterBuilder.<String> forElementCount(count()).build();
         forEachWord(word -> filter.add(word));
         return filter;
     }

@@ -14,7 +14,7 @@ public class BloomFilterBuilder<T>
         return builder;
     }
 
-    public BloomFilterBuilder withFalsePositiveRate(float falsePositiveRate)
+    public BloomFilterBuilder withFalsePositiveRate(double falsePositiveRate)
     {
         this.falsePositiveRate = falsePositiveRate;
         return this;
