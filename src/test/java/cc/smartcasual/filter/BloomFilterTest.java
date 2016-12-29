@@ -57,7 +57,6 @@ public class BloomFilterTest
 
     @Test
     public void wordNotInSetIsFiltered() throws Exception {
-        //TODO: Statistically
         assertThat(filter.mayContain(wordNotInSet), is(false));
     }
 

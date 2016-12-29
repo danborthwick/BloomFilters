@@ -3,14 +3,14 @@ package cc.smartcasual.filter;
 import java.util.Iterator;
 import java.util.Random;
 
-class RandomHashes<T> implements Iterable<Integer>
+class RandomHashes implements Iterable<Integer>
 {
     private int hashCount = 0;
     private int numberOfHashes;
     private final int maxHashValue;
     private final Random random;
 
-    RandomHashes(T value, int numberOfHashes, int maxHashValue)
+    RandomHashes(Object value, int numberOfHashes, int maxHashValue)
     {
         this.maxHashValue = maxHashValue;
         this.numberOfHashes = numberOfHashes;
