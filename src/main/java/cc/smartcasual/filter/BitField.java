@@ -37,7 +37,7 @@ public class BitField implements Serializable
 
     private void validateIndex(int index) {
         if ((index < 0) || (index >= size)) {
-            throw new IllegalArgumentException(String.format("Index {0} not valid for BitField of size {1}", index, size));
+            throw new IllegalArgumentException(String.format("Index %d not valid for BitField of size %d", index, size));
         }
     }
 
