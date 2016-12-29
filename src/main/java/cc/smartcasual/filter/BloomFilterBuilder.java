@@ -6,7 +6,7 @@ public class BloomFilterBuilder<T>
 {
     private int elementCount;
     private double falsePositiveRate = 0.01;
-    private Hashes.Builder<T> hashesBuilder = new RandomHashes.Builder<T>();
+    private Hashes.Builder<T> hashesBuilder = new RandomHashes.Builder<>();
 
     public static BloomFilterBuilder forElementCount(int elementCount)
     {

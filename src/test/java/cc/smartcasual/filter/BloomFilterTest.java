@@ -23,12 +23,14 @@ public class BloomFilterTest
     public static Collection<Object[]> data() throws Exception {
         return Arrays.asList(new Object[][]{
                 {"Simple", simpleFilter(), "a", "f", 5},
-                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "thisnotaword", DictionaryLoader.loadEnglish().count()}
+                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "notaword", DictionaryLoader.loadEnglish().count()},
+                {"Proper Nouns", properNounsFilter(), "Judith", "notaname", DictionaryLoader.loadProperNouns().count()},
         });
     }
 
     @Parameter
     public String testName;
+
     @Parameter(value = 1)
     public BloomFilter<String> filter;
     @Parameter(value = 2)
@@ -37,7 +39,6 @@ public class BloomFilterTest
     public String wordNotInSet;
     @Parameter(value = 4)
     public double entryCount;
-
     static BloomFilter<String> simpleFilter() {
         BloomFilter<String> filter = BloomFilterBuilder.forElementCount(8).build();
         filter.add(Arrays.asList("a", "b", "c", "d", "e" ));
@@ -46,6 +47,10 @@ public class BloomFilterTest
 
     static BloomFilter<String> englishDictionaryFilter() throws Exception {
         return DictionaryLoader.loadEnglish().makeFilter();
+    }
+
+    private static BloomFilter<String> properNounsFilter() throws Exception {
+        return DictionaryLoader.loadProperNouns().makeFilter();
     }
 
     @Test

@@ -23,6 +23,10 @@ public class DictionaryLoader {
         return new DictionaryLoader("words.txt");
     }
 
+    public static DictionaryLoader loadProperNouns() throws IOException, URISyntaxException {
+        return new DictionaryLoader("nouns.txt");
+    }
+
     public void forEachWord(Consumer<? super String> action) throws IOException {
         Stream<String> lines = readLines();
         lines.forEach(action);
