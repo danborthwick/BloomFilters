@@ -1,5 +1,6 @@
-package cc.smartcasual;
+package cc.smartcasual.filter;
 
+import cc.smartcasual.DictionaryLoader;
 import cc.smartcasual.filter.BloomFilter;
 import cc.smartcasual.filter.BloomFilterBuilder;
 import org.junit.Test;
@@ -22,8 +23,8 @@ public class BloomFilterTest
     @Parameters(name = "{0} filter")
     public static Collection<Object[]> data() throws Exception {
         return Arrays.asList(new Object[][]{
-                {"Simple", simpleFilter(), "a", "notaword"},
-                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "notaword"}
+                {"Simple", simpleFilter(), "a", "f"},
+                {"English Dictionary", englishDictionaryFilter(), "dishexecontahedroid", "thisnotaword"}
         });
     }
 

@@ -31,8 +31,8 @@ public class BloomFilter<T> implements SetFilter<T>, Serializable {
         return true;
     }
 
-    private RandomHasher<T> hashes(T value) {
-        return new RandomHasher<>(value, hashFunctionCount, bitField.size());
+    private RandomHashes<T> hashes(T value) {
+        return new RandomHashes<>(value, hashFunctionCount, bitField.size());
     }
 
     public int numberOfBitsSet() {

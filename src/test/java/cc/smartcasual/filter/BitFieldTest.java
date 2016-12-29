@@ -1,4 +1,4 @@
-package cc.smartcasual;
+package cc.smartcasual.filter;
 
 import cc.smartcasual.filter.BitField;
 import org.junit.Test;

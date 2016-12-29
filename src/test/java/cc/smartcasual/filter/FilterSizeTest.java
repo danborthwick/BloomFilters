@@ -1,5 +1,7 @@
-package cc.smartcasual;
+package cc.smartcasual.filter;
 
+import cc.smartcasual.DictionaryLoader;
+import cc.smartcasual.HashSetFilter;
 import cc.smartcasual.filter.BloomFilter;
 import cc.smartcasual.filter.SetFilter;
 import org.junit.Test;
@@ -22,7 +24,9 @@ public class FilterSizeTest {
 
         BloomFilter<String> bloomFilter = dictionary.makeFilter();
 
-        assertThat(sizeOf(bloomFilter), lessThan(sizeOf(naiiveFilter)));
+        int bloomSize = sizeOf(bloomFilter);
+        int naiiveSize = sizeOf(naiiveFilter);
+        assertThat(bloomSize, lessThan(naiiveSize));
     }
 
     private int sizeOf(Object object) throws IOException {
