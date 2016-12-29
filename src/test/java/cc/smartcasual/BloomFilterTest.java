@@ -30,7 +30,8 @@ public class BloomFilterTest
 
     @Test
     public void unknownWordIsFiltered() throws Exception {
-        assertThat(filter.mayContain("thisisnotaword"), is(false));
+        //TODO: Statistically
+        assertThat(filter.mayContain("notaword"), is(false));
     }
 
     @Test

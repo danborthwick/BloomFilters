@@ -20,7 +20,7 @@ public class BitField implements Serializable
         validateIndex(index);
         long entry = bits[entryIndexForBitIndex(index)];
         long mask = maskForIndex(index);
-        return (entry & mask) != 0;
+        return (entry & mask) != 0L;
     }
 
     public void set(int index)
