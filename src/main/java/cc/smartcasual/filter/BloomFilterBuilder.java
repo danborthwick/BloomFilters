@@ -6,6 +6,7 @@ public class BloomFilterBuilder<T>
 {
     private int elementCount;
     private double falsePositiveRate = 0.01;
+    private Hashes.Builder<T> hashesBuilder = new RandomHashes.Builder<T>();
 
     public static BloomFilterBuilder forElementCount(int elementCount)
     {
@@ -20,11 +21,17 @@ public class BloomFilterBuilder<T>
         return this;
     }
 
+    public BloomFilterBuilder withHashes(Hashes.Builder<T> builder)
+    {
+        this.hashesBuilder = builder;
+        return this;
+    }
+
     public BloomFilter<T> build()
     {
         int bitCount = (int) ceil(-elementCount * log(falsePositiveRate) / pow(log(2), 2));
         int hashFunctionCount = (int) ceil(-(log(falsePositiveRate)) / log(2));
 
-        return new BloomFilter<T>(bitCount, hashFunctionCount);
+        return new BloomFilter<>(bitCount, hashFunctionCount, hashesBuilder);
     }
 }

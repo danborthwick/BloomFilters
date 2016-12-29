@@ -1,35 +1,28 @@
 package cc.smartcasual.filter;
 
-import java.util.Iterator;
 import java.util.Random;
+import java.util.stream.Stream;
 
-class RandomHashes implements Iterable<Integer>
+class RandomHashes implements Hashes
 {
-    private int hashCount = 0;
-    private int numberOfHashes;
     private final int maxHashValue;
     private final Random random;
 
-    RandomHashes(Object value, int numberOfHashes, int maxHashValue)
+    RandomHashes(Object value, int maxHashValue)
     {
         this.maxHashValue = maxHashValue;
-        this.numberOfHashes = numberOfHashes;
         random = new Random(value.hashCode());
     }
 
     @Override
-    public Iterator<Integer> iterator() {
-        return new Iterator<Integer>() {
-            @Override
-            public boolean hasNext() {
-                return hashCount < numberOfHashes;
-            }
+    public Stream<Integer> stream() {
+        return Stream.generate(() -> random.nextInt(maxHashValue));
+    }
 
-            @Override
-            public Integer next() {
-                hashCount++;
-                return random.nextInt(maxHashValue);
-            }
-        };
+    static class Builder<T> implements Hashes.Builder<T> {
+        @Override
+        public Hashes build(T value, int maxHashValue) {
+            return new RandomHashes(value, maxHashValue);
+        }
     }
 }
